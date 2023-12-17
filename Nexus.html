@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVA LABYRINTH EXPLORE</title>
+    <link rel="stylesheet" href="Nexus.css">
+</head>
+<body>
+
+    <header>
+        <h1>WELCOME TO JAVA LABYRINTH EXPLORE</h1>
+    </header>
+
+    <main>
+        <section id="loginForm">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <a href="#" onclick="showSignup()">Sign up</a></p>
+        </section>
+
+        <section id="signupForm" style="display:none;">
+            <h2>Sign Up</h2>
+            <input type="text" id="signupName" placeholder="Full Name">
+            <input type="email" id="signupEmail" placeholder="Email">
+            <input type="password" id="signupPassword" placeholder="Password">
+            <button onclick="signup()">Sign Up</button>
+            <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+        </section>
+
+        <aside class="explanation-box">
+            <p>This site is your gateway to exploring the Java programming language, along with a mix of other technologies. Dive into various topics, questions, and discussions about Java and more.</p>
+        </aside>
+
+        <aside class="explanation-box-left">
+            <p>There are various Questions and Answer in this website</p>
+            <div class="qa-container">
+              <h2 class="topic-header">Java</h2>
+              <div class="question" onclick="toggleAnswer('java1')">What is Java?</div>
+              <div class="answer" id="java1">Java is a high-level, class-based, object-oriented programming language.</div>
+      
+              <div class="question" onclick="toggleAnswer('java2')">What is a Java Class?</div>
+              <div class="answer" id="java2">In Java, a class is a blueprint for creating objects.</div>
+      
+              <h2 class="topic-header">SQL and Database</h2>
+              <div class="question" onclick="toggleAnswer('sql1')">What is SQL?</div>
+              <div class="answer" id="sql1">SQL is a standard language for storing, manipulating, and retrieving data in databases.</div>
+      
+              <div class="question" onclick="toggleAnswer('sql2')">What is a Relational Database?</div>
+              <div class="answer" id="sql2">A relational database is a type of database that stores and provides access to data points that are related to one another.</div>
+          </div>
+        </aside>
+    </main>
+
+    <footer class="contact-section">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" placeholder="Your Phone Number">
+            <textarea id="reason" placeholder="Reason for Contacting" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </footer>
+
+    <script src="Nexus.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+</body>
+</html>
