@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="Nexus.css">
 </head>
 <body>
-
     <header>
         <h1>WELCOME TO JAVA LABYRINTH EXPLORE</h1>
     </header>
@@ -20,6 +19,42 @@
             <button onclick="login()">Login</button>
             <p>Don't have an account? <a href="#" onclick="showSignup()">Sign up</a></p>
         </section>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search questions..." onkeyup="searchQuestions()">
+            <div id="searchResultMessage" style="display: none;">
+                <p id="questionInFileMessage" style="display: none;">The question and answer are in the file.</p>
+                <p id="questionNotInFileMessage" style="display: none;">
+                    Do you want to add this? 
+                    <button onclick="knowsAnswer()">Yes, I know the answer</button> 
+                    <button onclick="hostResearch()">No, host a research</button>
+                </p>
+            </div>
+        </div>
+        
+        <div id="knowAnswerForm" style="display: none;">
+            <h3>Add Your Question and Answer</h3>
+            <input type="text" id="userQuestion" placeholder="Enter your question here">
+            <textarea id="userAnswer" placeholder="Enter the answer here"></textarea>
+            <button onclick="submitQA()">Submit Q&A</button>
+        </div>
+        
+        <div id="researchMessage" style="display: none;">
+            <p>Thank you! We will host a research and update our database accordingly.</p>
+        </div>
+        
+
+    <div id="addQuestionForm" style="display: none;">
+        <h3>Add New Question and Answer</h3>
+        
+        <input type="text" id="newQuestion" placeholder="Enter question">
+        <input type="text" id="newAnswer" placeholder="Enter answer">
+        <input type="email" id="userEmail" placeholder="Your email">
+        <button onclick="submitQuestion()">Submit</button>
+    </div>
+
+
+          
 
         <section id="signupForm" style="display:none;">
             <h2>Sign Up</h2>

@@ -123,3 +123,121 @@ a:hover {
         font-size: 0.8em; 
     }
 }
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 80%; 
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.highlighted-question {
+    background-color: #add8e6; 
+}
+
+#searchResultMessage, #addQuestionForm {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#addQuestionForm input, #addQuestionForm button {
+    margin-top: 10px;
+    width: 90%;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .explanation-box, .explanation-box-left, .comment-section, .contact-section, #loginForm, #signupForm {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .question, .answer {
+        font-size: 0.9em; 
+    }
+
+    #searchInput {
+        width: 90%; 
+        font-size: 0.9rem;
+    }
+
+    #addQuestionForm input, #addQuestionForm button {
+        width: 90%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .question, .answer {
+        font-size: 0.8em; 
+    }
+
+    #searchInput {
+        width: 95%; 
+        font-size: 0.8rem;
+    }
+
+    #addQuestionForm input, #addQuestionForm button {
+        width: 95%; 
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .explanation-box, .explanation-box-left, .comment-section, .contact-section, #loginForm, #signupForm, #addQuestionForm, #knowAnswerForm {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .question, .answer {
+        font-size: 1em; 
+    }
+
+    
+    header h1, .contact-section h2, .topic-header {
+        padding: 15px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem; 
+    }
+
+    #searchInput, #contactForm input, #contactForm textarea, #contactForm button,
+    #addQuestionForm input, #addQuestionForm button,
+    #knowAnswerForm input, #knowAnswerForm textarea, #knowAnswerForm button {
+        width: 95%; 
+    }
+
+    
+}
+
+
+@media screen and (max-width: 480px) {
+    .question, .answer {
+        font-size: 0.9em; 
+    }
+
+    
+    #knowAnswerForm input, #knowAnswerForm textarea, #knowAnswerForm button,
+    #addQuestionForm input, #addQuestionForm button {
+        padding: 10px; 
+    }
+
+    
+}
